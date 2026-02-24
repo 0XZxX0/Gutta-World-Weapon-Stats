@@ -1,0 +1,1 @@
+Drop your weapon PNGs here (e.g. glock19.png). Then update data/weapons.json image paths.

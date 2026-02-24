@@ -1,0 +1,559 @@
+:root{
+  --bg:#07070b;
+  --text:#e8e8f4;
+  --muted:#a6a6c5;
+
+  /* your iconic blue */
+  --accent:#1326d3;
+
+  /* use accent for borders */
+  --border:rgba(19,38,211,.75);
+
+  --shadow:0 14px 30px rgba(0,0,0,.55);
+}
+
+body.light{
+  --bg:#f4f4fb;
+  --text:#0d0d12;
+  --muted:#4b4b66;
+
+  --border:rgba(19,38,211,.55);
+  --shadow:0 12px 25px rgba(0,0,0,.18);
+}
+
+*{ box-sizing:border-box; }
+
+body{
+  margin:0;
+  font-family: "Contrail One", system-ui, "Segoe UI", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.app{
+  min-height:100vh;
+  display:grid;
+  grid-template-columns: 230px 1fr;
+  gap: 18px;
+  padding: 18px;
+}
+
+.sidebar{
+  display:flex;
+  flex-direction:column;
+  gap: 10px;
+  padding-top: 10px;
+}
+
+/* BUTTONS */
+.btn{
+  background: rgba(0,0,0,.25);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 10px 12px;
+  cursor:pointer;
+  transition: box-shadow .2s ease, transform .08s ease, border-color .2s ease;
+}
+
+.btn:hover{
+  border-color: rgba(19,38,211,1);
+  box-shadow: 0 0 18px rgba(19,38,211,.35);
+}
+.btn:active{ transform: translateY(1px); }
+.btn.pill{ border-radius:999px; padding: 8px 12px; }
+.btn.small{ padding: 6px 10px; font-size: 12px; }
+
+.main{ position:relative; }
+
+/* TOP BAR */
+.topbar{
+  position: relative;
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  padding: 6px 6px 14px 6px;
+}
+
+/* MAIN TITLE */
+h1{
+  position:absolute;
+  left:50%;
+  transform:translateX(-50%);
+  margin:0;
+  color: var(--accent);
+  font-weight:800;
+  letter-spacing:.4px;
+  font-size: 34px;
+}
+
+/* SECTION TITLE - CENTERED */
+#sectionTitle,
+h2{
+  width: 100%;
+  text-align: center;
+  margin: 6px 0 10px 0;
+  color: var(--muted);
+  font-weight:650;
+}
+
+/* HINT - CENTERED */
+#subHint,
+.hint{
+  width: 100%;
+  text-align: center;
+  margin: 0 0 12px 0;
+  color: #78b3ff;
+  font-size: 12px;
+  opacity: .85;
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns: repeat(5, 220px);
+  gap: 18px;
+  padding: 10px;
+  justify-content:center;
+}
+
+/* CARD */
+.card{
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  overflow:hidden;
+  position:relative;
+  border: 2px solid rgba(255,255,255,.08);
+}
+
+.card .name{
+  padding: 6px 8px;
+  font-size: 12px;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+  background: rgba(0,0,0,.18);
+}
+
+.card .imgwrap{
+  height: 150px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding: 12px;
+}
+
+.card img{
+  max-width: 110%;
+  max-height: 110%;
+  object-fit: contain;
+  filter: drop-shadow(0 6px 10px rgba(0,0,0,.35));
+}
+
+/* Generic tag pill (used for weapons / any card tag) */
+.tag{
+  position:absolute;
+  top: 14px;
+  left: 12px;
+  z-index: 50;
+
+  background: #ff3b3b;
+  color: #ffffff;
+  border: 1px solid rgba(255,255,255,.18);
+  border-radius: 999px;
+  padding: 3px 9px;
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1;
+  box-shadow: 0 6px 16px rgba(0,0,0,.35);
+}
+
+/* CARD COLORS */
+.card[data-stars="1"]{ background: linear-gradient(180deg, #2b2b2f, #16161a); }
+.card[data-stars="2"]{ background: linear-gradient(180deg, #1f7a0a, #0d2e06); }
+.card[data-stars="3"]{ background: linear-gradient(180deg, #0a6ea6, #071c2b); }
+.card[data-stars="4"]{ background: linear-gradient(180deg, #7a1bd1, #2a0f44); }
+.card[data-stars="5"]{ background: linear-gradient(180deg, #c4831d, #3a250a); }
+.card[data-stars="6"]{ background: linear-gradient(180deg, #fbff12, #3a250a); }
+
+/* =========================
+   Randomize mini cards
+   ========================= */
+.miniCard{
+  width: 180px;
+  min-width: 180px;
+  border-radius: 12px;
+}
+
+.miniName{
+  font-size: 12px;
+  padding: 6px 8px;
+}
+
+.miniImgwrap{
+  height: 120px;
+  padding: 10px;
+}
+
+.miniImgwrap img{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* =========================
+   Dropdown styling (Windy City look)
+   Dark background + yellow text
+   ========================= */
+#spinTier,
+#drugTier,
+select.btn.small{
+  background: #1a1a1f !important;
+  color: #ffd400 !important;
+  border: 1px solid rgba(255,212,0,.55) !important;
+}
+
+#spinTier,
+#drugTier,
+select.btn.small{
+  accent-color: #ffd400;
+}
+
+#spinTier option,
+#drugTier option,
+select.btn.small option{
+  background: #1a1a1f !important;
+  color: #ffd400 !important;
+}
+
+#spinTier:focus,
+#drugTier:focus,
+select.btn.small:focus{
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255,212,0,.25);
+}
+
+/* =========================
+   DRUG CARDS
+   ========================= */
+
+.drugCard{
+  cursor: pointer;
+  position: relative;
+}
+
+.drugCard .name{
+  display:block;
+  background:#ff3b3b;
+  color:#fff;
+  font-weight:900;
+  letter-spacing:.2px;
+  border-bottom: 1px solid rgba(255,255,255,.18);
+}
+
+.drugCard .imgwrap{
+  height: 150px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding: 12px;
+}
+
+.drug-tooltip{
+  position:absolute;
+  left: 10px;
+  bottom: 10px;
+  background: rgba(0,0,0,.85);
+  color: #fff;
+  font-weight: 900;
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.14);
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity .12s ease, transform .12s ease;
+  pointer-events:none;
+  z-index: 60;
+  white-space: nowrap;
+  box-shadow: 0 10px 22px rgba(0,0,0,.45);
+}
+
+.drugCard:hover .drug-tooltip{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.drug-badge{
+  position:absolute;
+  top: 10px;
+  left: 10px;
+  background: #ff3a3a;
+  color: #fff;
+  font-weight: 900;
+  font-size: 11px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  z-index: 61;
+  box-shadow: 0 8px 18px rgba(0,0,0,.35);
+}
+
+/* =========================
+   DRUG MODAL
+   ========================= */
+body.modal-open{ overflow: hidden; }
+
+.modal.hidden{ display: none; }
+
+.modal{
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+}
+
+.modal-backdrop{
+  position:absolute;
+  inset:0;
+  background: rgba(0,0,0,.6);
+  backdrop-filter: blur(4px);
+}
+
+.modal-card{
+  position: relative;
+  width: min(980px, calc(100vw - 40px));
+  margin: 70px auto;
+  background: rgba(12, 18, 28, .92);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 18px;
+  box-shadow: 0 18px 45px rgba(0,0,0,.65);
+  padding: 18px;
+}
+
+.modal-close{
+  position:absolute;
+  top: 12px;
+  right: 12px;
+}
+
+.modal-grid{
+  display:grid;
+  grid-template-columns: 1.15fr .85fr;
+  gap: 16px;
+  align-items: start;
+}
+
+.modal-image{
+  border-radius: 16px;
+  background: rgba(255,255,255,.03);
+  border: 1px solid rgba(255,255,255,.10);
+  overflow:hidden;
+  height: 360px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding: 12px;
+}
+
+.modal-image img{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 10px 22px rgba(0,0,0,.45));
+}
+
+.modal-title{
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: .3px;
+  color: var(--text);
+  margin-bottom: 10px;
+}
+
+.modal-perks{
+  display:flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.perk-pill{
+  display:inline-flex;
+  align-items:center;
+  gap: 6px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.12);
+  font-size: 12px;
+  font-weight: 900;
+  color: #d7e8ff;
+}
+
+.perk-pill.muted{ opacity: .75; }
+
+.modal-desc{
+  color: #9fb7cc;
+  line-height: 1.35;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.modal-price{
+  margin-top: 14px;
+  font-weight: 900;
+  color: #fff;
+}
+
+/* =========================
+   DRUG RANDOMIZER BULLET LIST
+   ========================= */
+.drug-bullets{
+  margin: 10px auto 0;
+  padding: 0;
+  list-style: none;
+  width: min(520px, 90vw);
+  text-align: left;
+}
+
+.drug-bullet{
+  display:flex;
+  align-items:center;
+  gap: 10px;
+  padding: 3px 0;
+  cursor: pointer;
+  user-select: none;
+}
+
+.drug-bullet .dot{
+  width: 14px;
+  color: #fff;
+}
+
+.drug-bullet .txt{
+  font-weight: 900;
+  color: #ff0000;
+}
+
+.drug-bullet:hover .txt{ color: #ffd400; }
+
+/* =========================================================
+   MOBILE / TABLET: MATCH WINDY CITY LOOK
+   Left rail + tight 5-column grid with small cards
+   ========================================================= */
+@media (max-width: 980px){
+  /* keep left rail on mobile like Windy City */
+  .app{
+    grid-template-columns: 112px 1fr;
+    gap: 10px;
+    padding: 10px;
+    align-items:start;
+  }
+
+  .sidebar{
+    gap: 8px;
+    padding-top: 0;
+    position: sticky;
+    top: 10px;
+    align-self:start;
+  }
+
+  .btn{
+    width: 100%;
+    padding: 8px 8px;
+    font-size: 12px;
+    border-radius: 6px;
+  }
+
+  /* title should NOT overlap */
+  h1{
+    position: static;
+    transform:none;
+    text-align:center;
+    font-size: 22px;
+    line-height: 1.05;
+    margin: 4px 0 6px 0;
+  }
+
+  .topbar{
+    justify-content:flex-end;
+    padding: 0 0 8px 0;
+  }
+
+  /* smaller section title */
+  #sectionTitle, h2{
+    margin: 2px 0 8px 0;
+    font-size: 15px;
+  }
+
+  #subHint, .hint{
+    margin: 0 0 8px 0;
+    font-size: 11px;
+  }
+
+  /* Tight 5-column grid */
+  .grid{
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 8px;
+    padding: 6px;
+  }
+
+  .card{
+    border-radius: 8px;
+    border-width: 2px;
+  }
+
+  .card .name{
+    padding: 4px 5px;
+    font-size: 10px;
+    line-height: 1.1;
+  }
+
+  .card .imgwrap{
+    height: 74px;
+    padding: 6px;
+  }
+
+  .card img{
+    max-width: 100%;
+    max-height: 100%;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,.35));
+  }
+
+  .tag{
+    top: 6px;
+    left: 6px;
+    padding: 2px 6px;
+    font-size: 9px;
+  }
+
+  .drug-badge{
+    top: 6px;
+    left: 6px;
+    padding: 2px 6px;
+    font-size: 9px;
+  }
+
+  .drug-tooltip{
+    left: 6px;
+    bottom: 6px;
+    font-size: 10px;
+    padding: 4px 7px;
+  }
+
+  /* Randomize view (inline styles) overrides */
+  #wheelWrap{ max-width: 100% !important; width: 100% !important; height: 120px !important; }
+  #wheelStrip{ gap: 8px !important; padding: 8px !important; }
+
+  .miniCard{ width: 110px; min-width: 110px; border-radius: 10px; }
+  .miniImgwrap{ height: 70px; padding: 6px; }
+  .miniName{ font-size: 10px; padding: 4px 6px; }
+
+  #drops{ grid-template-columns: repeat(3, minmax(0, 1fr)) !important; gap: 8px !important; }
+
+  .drug-bullets{ width: min(520px, calc(100vw - 150px)); }
+}
+
+/* Extra-small phones: keep 5 columns but tighter */
+@media (max-width: 420px){
+  .app{ grid-template-columns: 104px 1fr; }
+  .grid{ gap: 6px; }
+  .card .imgwrap{ height: 68px; }
+}

@@ -1,0 +1,1 @@
+Drop your drug PNGs here (e.g. rp10.png). Then update data/drugs.json image paths.

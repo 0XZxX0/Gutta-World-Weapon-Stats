@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <!--
+    Windy City style mobile layout:
+    Render the desktop layout on phones and let the browser scale it down
+    (so you see many cards at once instead of a stacked/mobile reflow).
+  -->
+  <meta name="viewport" content="width=1200" />
+  <title>Gutta-World-Weapons</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Contrail One font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Contrail+One&display=swap" rel="stylesheet">
+
+  <style>
+    /* Force site font to Contrail One */
+    body { font-family: "Contrail One", system-ui, "Segoe UI", Arial, sans-serif !important; }
+  </style>
+
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <button class="btn" data-view="t1">Show T1</button>
+      <button class="btn" data-view="t15">Show T1.5</button>
+      <button class="btn" data-view="t2">Show T2</button>
+      <button class="btn" data-view="drugs">Drugs</button>
+      <button class="btn" data-view="randomize">Randomize</button>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <h1 id="siteTitle">Gutta-World-Weapons</h1>
+        <button class="btn pill" id="themeToggle">Light Mode</button>
+      </header>
+
+      <h2 id="sectionTitle">Tier 1 Weapons</h2>
+
+      <div id="subHint" class="hint"></div>
+
+      <section id="content"></section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
