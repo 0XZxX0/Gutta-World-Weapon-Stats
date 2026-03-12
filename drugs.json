@@ -1,0 +1,110 @@
+[
+  {
+    "name": "Actavis",
+    "tier": "T1",
+    "price": "$1,000-$1,600",
+    "description": "Top-shelf purple syrup. Rare, expensive, and highly sought after. Smooth body high.",
+    "stars": 1,
+    "image": "img/drugs/actavis_pint.png",
+    "perks": ["+15 Armour", "+15 Armour"]
+  },
+  {
+    "name": "Tris Syrup",
+    "tier": "T1",
+    "price": "$750-$1,000",
+    "description": "A fan-favorite for lean connoisseurs. Smooth and relaxing with a lasting buzz.",
+    "stars": 1,
+    "image": "img/drugs/hitech_pint.png",
+    "perks": ["+10 Armour", "+10 Armour"]
+  },
+  {
+    "name": "Wockhardt",
+    "tier": "T1",
+    "price": "$500-$800",
+    "description": "Widely available and reliable. Known for putting users into a heavy lean; slows the body.",
+    "stars": 1,
+    "image": "img/drugs/wockhardt_pint.png",
+    "perks": ["+7 Armour", "+7 Armour"]
+  },
+  {
+    "name": "Quagen",
+    "tier": "T1",
+    "price": "$300-$650",
+    "description": "Generic purples. Not as potent, but still gets you leaned out. Budget-friendly buzz.",
+    "stars": 1,
+    "image": "img/drugs/quagen_pint.png",
+    "perks": ["+5 Armour", "+5 Armour"]
+  },
+  {
+    "name": "RP10",
+    "tier": "T1",
+    "price": "$140-$210",
+    "description": "Strong painkillers used by pill poppers to feel a brief period of euphoria and numbness, giving off a delightful high.",
+    "stars": 1,
+    "image": "img/drugs/rp10.png",
+    "perks": ["+10 Health Regen", "+10 Health Regen"]
+  },
+  {
+    "name": "RP30",
+    "tier": "T1",
+    "price": "$150-$230",
+    "description": "A 30MG variant of the RP10; similar oxycodone blend with a stronger high.",
+    "stars": 1,
+    "image": "img/drugs/rp30.png",
+    "perks": ["+10 Health Regen", "+10 Health Regen"]
+  },
+  {
+    "name": "ALG",
+    "tier": "T1",
+    "price": "$120-$180",
+    "description": "A blend of oxycodone with a strong, addictive high. Manufactured as a blue pill, often mimicked via fake tablets.",
+    "stars": 1,
+    "image": "img/drugs/alg.png",
+    "perks": ["Bonus Sprint Speed + 2% Stamina Regen", "Bonus Sprint Speed + 2% Stamina Regen"]
+  },
+  {
+    "name": "Telsa Pill",
+    "tier": "T1",
+    "price": "$800-$1,400",
+    "description": "Street-level MDMA pills, imprinted with a 'Tesla' logo. Usually more potent than base MDMA due to unregulated manufacturing; intense hallucinogenic high.",
+    "stars": 1,
+    "image": "img/drugs/telsapill.png",
+    "perks": ["Highly Increased Sprint Speed, +7% Stamina Regen", "Highly Increased Sprint Speed, +7% Stamina Regen"]
+  },
+  {
+    "name": "Percocet 10",
+    "tier": "T1",
+    "price": "$90-$140",
+    "description": "Percocet 10mg pill. A moderate painkiller dose with a smooth, calming effect.",
+    "stars": 1,
+    "image": "img/drugs/percocet10.png",
+    "perks": ["+10 Pain Relief", "+Light euphoria / calm"]
+  },
+  {
+    "name": "Percocet 30",
+    "tier": "T1",
+    "price": "$150-$230",
+    "description": "Percocet 30mg pill. A strong dose that hits harder and lasts longer, popular with heavy users.",
+    "stars": 1,
+    "image": "img/drugs/percocet30.png",
+    "perks": ["+30 Pain Relief", "+Heavy euphoria / numb"]
+  },
+  {
+    "name": "Adderall",
+    "tier": "T1",
+    "price": "$925-$1,330",
+    "description": "Methamphetamine crystals in pill form. Provides a strong stimulant rush, keeping users alert and moving fast.",
+    "stars": 1,
+    "image": "img/drugs/adderall.png",
+    "perks": ["Stamina Boost", "+Fast sprint / high alert"]
+  },
+  {
+    "name": "Cocaine",
+    "tier": "T1",
+    "price": "$220-$320",
+    "description": "A bag of cocaine powder. Delivers a quick, intense burst of energy and confidence, often used before risky plays.",
+    "stars": 1,
+    "image": "img/drugs/cocaine.png",
+    "perks": ["Focus Boost", "+Sharper reaction / energy"]
+  }
+]
