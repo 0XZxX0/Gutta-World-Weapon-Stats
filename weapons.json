@@ -1,0 +1,259 @@
+[
+  {
+    "name": "Nik",
+    "tier": "T1",
+    "stars": 1,
+    "image": "img/weapons/WEAPON_CANIK.png"
+  },
+  {
+    "name": "G20",
+    "tier": "T1",
+    "stars": 1,
+    "image": "img/weapons/WEAPON_G20.png"
+  },
+  {
+    "name": "G26",
+    "tier": "T1",
+    "stars": 1,
+    "image": "img/weapons/WEAPON_G26.png"
+  },
+  {
+    "name": "SP320",
+    "tier": "T1",
+    "stars": 1,
+    "image": "img/weapons/WEAPON_P88P.png"
+  },
+
+  {
+    "name": "CPT",
+    "tier": "T1",
+    "stars": 2,
+    "image": "img/weapons/WEAPON_CPT.png"
+  },
+  {
+    "name": "G17G5",
+    "tier": "T1",
+    "stars": 2,
+    "image": "img/weapons/WEAPON_G17G5.png"
+  },
+  {
+    "name": "G19G",
+    "tier": "T1",
+    "stars": 2,
+    "image": "img/weapons/WEAPON_G19G.png"
+  },
+  {
+    "name": "G22",
+    "tier": "T1",
+    "stars": 2,
+    "image": "img/weapons/WEAPON_G22.png"
+  },
+  {
+    "name": "G41",
+    "tier": "T1",
+    "stars": 2,
+    "image": "img/weapons/WEAPON_G41.png"
+  },
+  {
+    "name": "G43G",
+    "tier": "T1",
+    "stars": 2,
+    "image": "img/weapons/WEAPON_G43G.png"
+  },
+  {
+    "name": "HK45",
+    "tier": "T1",
+    "stars": 2,
+    "image": "img/weapons/WEAPON_HK45.png"
+  },
+  {
+    "name": "Olive 17",
+    "tier": "T1",
+    "stars": 2,
+    "image": "img/weapons/WEAPON_OLIVE17.png"
+  },
+  {
+    "name": "SIGCB",
+    "tier": "T1",
+    "stars": 2,
+    "image": "img/weapons/WEAPON_SIGCB.png"
+  },
+
+  {
+    "name": "Callous",
+    "tier": "T1",
+    "stars": 3,
+    "image": "img/weapons/WEAPON_CALLOUS.png"
+  },
+  {
+    "name": "FFN",
+    "tier": "T1",
+    "stars": 3,
+    "image": "img/weapons/WEAPON_FFN.png"
+  },
+  {
+    "name": "G19 FLEX",
+    "tier": "T1",
+    "stars": 3,
+    "image": "img/weapons/WEAPON_G19FLEX.png"
+  },
+  {
+    "name": "G30",
+    "tier": "T1",
+    "stars": 3,
+    "image": "img/weapons/WEAPON_G30.png"
+  },
+  {
+    "name": "G45S",
+    "tier": "T1",
+    "stars": 3,
+    "image": "img/weapons/WEAPON_G45S.png"
+  },
+  {
+    "name": "Olive G19",
+    "tier": "T1",
+    "stars": 3,
+    "image": "img/weapons/WEAPON_OLIVEG19.png"
+  },
+
+  {
+    "name": "G40",
+    "tier": "T1",
+    "stars": 4,
+    "image": "img/weapons/WEAPON_G40.png"
+  },
+  {
+    "name": "MGLOCK19",
+    "tier": "T1",
+    "stars": 4,
+    "image": "img/weapons/WEAPON_MGLOCK19.png"
+  },
+  {
+    "name": "G43 MOS",
+    "tier": "T2",
+    "stars": 4,
+    "image": "img/weapons/WEAPON_43MOS.png"
+  },
+  {
+    "name": "G45 MOS",
+    "tier": "T2",
+    "stars": 4,
+    "image": "img/weapons/WEAPON_45MOS.png"
+  },
+  {
+    "name": "FN 5.7",
+    "tier": "T2",
+    "stars": 4,
+    "image": "img/weapons/WEAPON_FN.png"
+  },
+  {
+    "name": "FNX-45",
+    "tier": "T2",
+    "stars": 4,
+    "image": "img/weapons/WEAPON_FNX45.png"
+  },
+  {
+    "name": "G26S",
+    "tier": "T2",
+    "stars": 4,
+    "image": "img/weapons/WEAPON_G26S.png"
+  },
+  {
+    "name": "G20G5",
+    "tier": "T2",
+    "stars": 4,
+    "image": "img/weapons/WEAPON_G205.png"
+  },
+  {
+    "name": "MAC-10",
+    "tier": "T2",
+    "stars": 4,
+    "image": "img/weapons/WEAPON_MAC10.png"
+  },
+  {
+    "name": "TEC-9",
+    "tier": "T2",
+    "stars": 4,
+    "image": "img/weapons/WEAPON_TEC9.png"
+  },
+
+  {
+    "name": "Draco",
+    "tier": "T2",
+    "stars": 5,
+    "image": "img/weapons/WEAPON_DRACO2.png"
+  },
+  {
+    "name": "Draco AK",
+    "tier": "T2",
+    "stars": 5,
+    "image": "img/weapons/WEAPON_DRACOZ.png"
+  },
+  {
+    "name": "G45",
+    "tier": "T2",
+    "stars": 5,
+    "image": "img/weapons/WEAPON_G45.png"
+  },
+
+  {
+    "name": "K-Vec",
+    "tier": "T2",
+    "stars": 6,
+    "image": "img/weapons/WEAPON_KVEC.png"
+  },
+  {
+    "name": "MCX",
+    "tier": "T2",
+    "stars": 6,
+    "image": "img/weapons/WEAPON_MCX.png"
+  },
+  {
+    "name": "DCOMB",
+    "tier": "T1.5",
+    "stars": 2,
+    "image": "img/weapons/WEAPON_DCOMB.png"
+  },
+   {
+    "name": "G19XG",
+    "tier": "T1.5",
+    "stars": 2,
+    "image": "img/weapons/WEAPON_G19XG.png"
+  },
+   {
+    "name": "G233",
+    "tier": "T1.5",
+    "stars": 2,
+    "image": "img/weapons/WEAPON_G233.png"
+  },
+  {
+    "name": "G23",
+    "tier": "T1.5",
+    "stars": 3,
+    "image": "img/weapons/WEAPON_G23.png" 
+  },
+   {
+    "name": "HC",
+    "tier": "T1.5",
+    "stars": 3,
+    "image": "img/weapons/WEAPON_HELLCAT.png"
+  },
+  {
+    "name": "G19s",
+    "tier": "T1.5",
+    "stars": 4,
+    "image": "img/weapons/WEAPON_19SWITCH.png"
+  },
+   {
+    "name": "AR Pistol",
+    "tier": "T1.5",
+    "stars": 5,
+    "image": "img/weapons/WEAPON_APRD.png"
+  },
+  {
+    "name": "ARP",
+    "tier": "T1.5",
+    "stars": 5,
+    "image": "img/weapons/WEAPON_ARPSH.png"
+  }
+]
